@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: #f9f9f9;
+  line-height: 1.6;
+}
+
+section {
+  margin: 60px auto;
+  padding: 40px 20px;
+  width: 80%;
+  border-radius: 15px;
+  border-bottom: 2px solid orange;
+  padding-bottom: 30px;
+}
+
+.s-p {
+  width: 100%;
+  background-color: #1a1a1a;
+  border-bottom: none;
+  padding:20px;
+  border-radius: 15px;
+}
+
+.s-p p {
+  line-height: 1.7;
+}
+
+h1, h2, h5 {
+  margin: 20px 0;
+  color: #9ecfff;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+}
+
+header {
+  background-image: url("image.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+#projects ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+#projects ul li {
+  flex: 1 1 30%;
+  min-width: 250px;
+  padding: 25px;
+  border-radius: 25px;
+  background-color: #1a1a1a;
+  line-height: 1.8;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#projects ul li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(255, 165, 0, 0.2);
+  border: 2px solid orange;
+  color: orange;
+}
+
+.tools {
+  color: orange;
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  margin: 60px auto;
+}
+
+#contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#contact ul li {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  width: 35%;
+  height: 55px;
+  margin: 10px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+  color: #9ecfff;
+  text-decoration: none;
+}
+
+#contact ul li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 165, 0, 0.2);
+}
+
+#contact ul li a:hover {
+  color: orange;
+}
+
+.ending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  margin-top: 30px;
+}
+
+li:hover {
+  transition: color 0.3s ease;
+  color: orange;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+    padding: 30px 15px;
+  }
+
+  #projects ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #projects ul li {
+    width: 100%;
+    min-width: unset;
+  }
+
+  #contact ul li {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.project-link:hover {
+  color: orange;
+}
